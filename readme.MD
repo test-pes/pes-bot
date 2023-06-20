@@ -30,3 +30,9 @@ listen to action tipo click buttone
     });
 
 -----
+
+mandare un sondaggio vero
+
+    ctx.sendPoll("domanda a caso", ["risposta 1 SI", "risposta 2"], {
+      is_anonymous: false
+    })
