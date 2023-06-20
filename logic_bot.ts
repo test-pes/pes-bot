@@ -54,6 +54,7 @@ export default function botLogic() {
     ctx.sendPoll("domanda a caso", ["risposta 1 SI", "risposta 2"], {
       is_anonymous: false
     })
+
     // ctx.replyWithQuiz("domanda a caso", ["risposta 1 SI", "risposta 2"] )
     // ctx.reply("reply normale, per vedere se il sondaggio reply è il problema oppure il codice id in generale che da l'errore")
     // bot.command('poll', (ctx) =>{
@@ -65,6 +66,14 @@ export default function botLogic() {
     //   )
     // })
     // bot.on('poll_answer', (ctx) => bot.reply(ctx.pollAnswer))
+  })
+
+  bot.hears("cubo", (ctx) => {
+    ctx.sendDice({emoji: "⚽"})
+  })
+
+  bot.hears("pallone", (ctx) => {
+    ctx.sendDice({emoji: "⚽"})
   })
 
   bot.launch();

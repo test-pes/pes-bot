@@ -36,3 +36,22 @@ mandare un sondaggio vero
     ctx.sendPoll("domanda a caso", ["risposta 1 SI", "risposta 2"], {
       is_anonymous: false
     })
+
+------
+
+random numero da 1 a 6. 
+cubo routare 
+
+    bot.hears("cubo", (ctx) => {
+       ctx.sendDice()
+    })
+
+------
+
+random numero da 0 a 1
+
+    bot.hears("pallone", (ctx) => {
+        ctx.sendDice({emoji: "⚽"})
+      })
+
+------
