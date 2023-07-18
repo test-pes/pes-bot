@@ -55,3 +55,19 @@ random numero da 0 a 1
       })
 
 ------
+
+ottenere il valore da dice
+
+      const diceMessage = await ctx.sendDice();
+
+esempio: 
+
+      bot.hears("test", async (ctx) => {
+        // Send a dice message and wait for it to be sent
+        const diceMessage = await ctx.sendDice();
+        // Reply with the value of the dice
+        ctx.reply(`The value is ${diceMessage.dice.value}`);
+      });
+
+
+-------
